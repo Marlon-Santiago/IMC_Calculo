@@ -9,31 +9,22 @@ ano_naicimente = ano_atual - idade
 peso = int(peso)
 altura = float(altura)
 imc = peso / altura ** 2
-abaixo_peso = 18.5
-peso_normal = 18.6
-peso_normal2 = 24.9
-acima_peso = 25
-acima_peso2 = 29.9
-obesidade = 30
-obesidade1 = 34.9
-obesidade2 = 35
-obesidade_2 = 39.9
-obesidade3 = 40
 
 
-if imc <= abaixo_peso:
+
+if imc <= 18.5:
     print(f'{nome} tem {idade} anos nasceu em {ano_naicimente} está com o imc {imc:.2f} com {peso}KG e abaixo do peso ideal ')
 
-elif imc >= peso_normal and imc <= peso_normal2:
+elif imc >= 18.6 and imc <= 24.9:
     print(f'{nome} tem {idade} anos nasceu em {ano_naicimente} está com o imc {imc:.2f} e no peso ideal ')
 
-elif imc >= acima_peso and imc <= acima_peso2:
+elif imc >= 25 and imc <= 29.9:
     print(f'{nome} tem {idade} anos nasceu em {ano_naicimente} está com o imc {imc:.2f} e acima do peso ideal ')
 
-elif imc >= obesidade and imc <= obesidade1:
+elif imc >= 30 and imc <= 34.9:
     print(f'{nome} tem {idade} anos nasceu em {ano_naicimente} está com o imc {imc:.2f} e com obesidade nivel 1 ')
 
-elif imc >= obesidade2 and imc <= obesidade_2:
+elif imc >= 35 and imc <= 39.9:
     print(f'{nome} tem {idade} anos nasceu em {ano_naicimente} está com o imc {imc:.2f} e com obesidade nivel 2 ')
 
 else:
